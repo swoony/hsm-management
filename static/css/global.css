@@ -1,0 +1,361 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+}
+/*滚动条样式*/
+.area-box::-webkit-scrollbar, .logistics::-webkit-scrollbar { /*滚动条整体样式*/
+  width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 4px;
+}
+
+.area-box::-webkit-scrollbar-thumb, .logistics::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.area-box::-webkit-scrollbar-track, .logistics::-webkit-scrollbar-track { /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.amap-container img {
+  width: 30px;
+}
+
+.car-box {
+  display: none;
+}
+
+.car-box ul {
+  max-height: 716px;
+  overflow-y: scroll;
+}
+
+.car-box ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f8f8f9;
+  font-family: MicrosoftYaHeiUI;
+  color: rgba(148, 148, 148, 1);
+  line-height: 40px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.car-box ul li img {
+  margin-right: 10px;
+}
+
+.car-box ul li:last-child {
+  border: none;
+}
+
+.blue {
+  color: #006CB7FF !important;
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.opera-btn span{
+  color: #006CB7FF;
+  cursor: pointer;
+  margin:0 20px 0 0;
+}
+.up-date {
+  display: inline-block;
+  width: 48px;
+  position: relative;
+}
+.up-date .ivu-upload-list{
+  position: absolute;
+  left: 45px;
+  top: -10px;
+}
+.amap-sug-result{
+  z-index: 2000 !important;
+}
+.myPageTop {
+  top: 50px !important;
+  left: 20px !important;
+  background: none !important;
+  border: none !important;
+}
+.myPageTop table{
+  background:#fff;
+}
+.car-info{
+  display: inline-block;
+  min-width: 100px;
+}
+.car-info p{
+  margin-top:10px;
+}
+.input-item{
+  line-height: 26px;
+  width: 120px;
+  text-align: center;
+}
+.controlBtn dd div.ivu-poptip{
+  width: 100%;
+}
+.controlBtn dd div.ivu-poptip-rel{
+  display: flex !important;
+}
+.ivu-btn-primary{
+  color: #fff;
+  background-color: #006CB7FF !important;
+  border-color: #006CB7FF !important;
+}
+
+.mui-dis-flex {
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -o-flex;
+}
+
+.sr-query-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1rem 1.875rem 0 1.875rem;
+}
+
+.sr_input_err {
+  border: 1px solid red;
+  border-radius: 4px;
+}
+
+.sr_item_err {
+  color: red;
+}
+
+.sr-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.sr-ctl-tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px 1.875rem;
+  margin: 1rem 0;
+}
+
+.sr-ctl-tools .sr-btn:not(:first-child) {
+  margin-left: 8px;
+}
+
+.sr-query-tools {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1.875rem 0 1.875rem;
+}
+.sr-query-tools .query-condition {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sr-query-tools .query-condition label {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.sr-query-tools .query-condition .query-item-txt input {
+  font-size: 14px;
+  border-radius: 6px;
+  border: solid 1px #e5e5e5;
+  padding: 2px;
+}
+.sr-query-tools div, button:not(:first-child) {
+  margin-left: 5px;
+}
+.sr-table {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 0 1.875rem;
+  width: 100%;
+}
+
+.sr-table-page {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0 12px 0;
+}
+
+.sr-modal-footer {
+  /*border-bottom: solid 10px #cbcbcb;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sr-modal-footer:not(:first-child) {
+  margin-left: 5px;
+}
+
+.sr-form-item-w100 {
+  width: 100%;
+}
+
+.sr-form-item-w12 {
+  width: 12%;
+}
+
+.sr-form-item-w16 {
+  width: 16%;
+}
+
+.sr-form-item-w20 {
+  width: 20%;
+}
+
+.sr-form-item-w30 {
+  width: 30%;
+}
+
+.sr-form-item-w40 {
+  width: 40%;
+}
+
+.sr-form-item-w60 {
+  width: 60%;
+}
+
+.sr-margin-top-20 {
+  margin-top: 20px;
+}
+
+.sr-margin-top-10 {
+  margin-top: 10px;
+}
+
+.sr-app-form .sr-app-form-block:not(:first-child) {
+  margin-top: 15px;
+}
+
+.sr-app-form .sr-app-form-block:last-child {
+  border-bottom: none;
+}
+
+.sr-app-form .sr-app-form-block {
+  border-bottom: solid 1px #e5e5e5;
+  padding-bottom: 20px;
+}
+
+.sr-app-form .sr-app-form-block .group {
+  color: #23262b;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei-Bold;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item:not(:first-child) {
+  margin-left: 5px;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item3 {
+  width: 33%;
+  display: flex;
+  align-items: center;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item6 {
+  width: 66%;
+  display: flex;
+  align-items: center;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item-label .sr-app-form-item-label span {
+  color: #f7548f;
+  margin-right: 5px;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item-label span {
+  color: #f7548f;
+  margin-right: 5px;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item .sr-app-form-item-label label {
+  color: #23262b;
+  margin-right: 5px;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item input {
+  padding: 2px;
+  font-size: 14px;
+}
+
+.sr-app-form .sr-app-form-block .sr-app-form-col .sr-app-form-item input::placeholder {
+  font-size: 14px;
+  color: #cbcbcb;
+}
+
+.sr-btn {
+  background-color: #007aff;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 4px 8px;
+}
+
+.sr-btn-cancel {
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #007aff;
+  padding: 4px 8px;
+  border: solid 1px #007aff;
+}
+
+.amap-container img {
+  width: 30px;
+}
+
+.info-car {
+  line-height: 26px !important;
+  height: 26px !important;
+  width: 120px;
+  text-align: center !important;
+}
